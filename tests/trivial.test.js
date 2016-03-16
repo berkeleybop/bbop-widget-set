@@ -2,8 +2,6 @@
 //// This is just a test to test the testing environment.
 ////
 
-// Prefer Chai assert. We're (somehow, it does not work for "assert")
-// passing in "should" from the gulp-defined globals.
 var assert = require('chai').assert;
 
 describe('our testing environment is sane', function(){
