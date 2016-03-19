@@ -29,7 +29,8 @@
     "dependencies": {
         "bbop-core": "0.0.5",
         "bbop-response-golr": "0.0.5",
-        "jquery": "1.9.1",
+        "jquery": "2.2.2",
+        "jquery-ui": "1.12.0-beta.1",
         "mustache": "2.2.1",
         "underscore": "1.8.3"
     },
@@ -47,20 +48,6 @@
         "gulp-uglify": "^1.2.0",
         "jsdoc": "^3.3.0",
         "jsdoc-baseline": "git://github.com/hegemonic/jsdoc-baseline.git#74d1dc8075"
-    },
-    "browser": {
-        "jquery": "./lib/jquery.js",
-        "jquery-ui": "./lib/jquery-ui-1.10.3.custom.min.js"
-    },
-    "browserify-shim": {
-        "jquery": {
-            "exports": "global:jQuery"
-        },
-        "jquery-ui": {
-            "depends": [
-                "jquery"
-            ]
-        }
     },
     "bundleDependencies": [],
     "private": false,
