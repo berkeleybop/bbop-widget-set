@@ -48,8 +48,6 @@
         "jsdoc": "^3.3.0",
         "jsdoc-baseline": "git://github.com/hegemonic/jsdoc-baseline.git#74d1dc8075"
     },
-    "browser": {},
-    "browserify-shim": {},
     "bundleDependencies": [],
     "private": false,
     "directories": {
