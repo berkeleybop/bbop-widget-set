@@ -49,7 +49,7 @@
         "jsdoc-baseline": "git://github.com/hegemonic/jsdoc-baseline.git#74d1dc8075"
     },
     "browser": {
-        "jquery": "./node_modules/jquery/jquery.js",
+        "jquery": "./lib/jquery.js",
         "jquery-ui": "./lib/jquery-ui-1.10.3.custom.min.js"
     },
     "browserify-shim": {
