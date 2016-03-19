@@ -1,6 +1,6 @@
 {
     "name": "bbop-widget-set",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "license": "BSD-3-Clause",
     "description": "The set package for commpnly used BBOP widgets. This replaces the widgets from the old monolithic bundle.",
     "keywords": [
