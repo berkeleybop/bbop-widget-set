@@ -1,6 +1,6 @@
 {
     "name": "bbop-widget-set",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "BSD-3-Clause",
     "description": "The set package for commpnly used BBOP widgets. This replaces the widgets from the old monolithic bundle.",
     "keywords": [
@@ -48,10 +48,8 @@
         "jsdoc": "^3.3.0",
         "jsdoc-baseline": "git://github.com/hegemonic/jsdoc-baseline.git#74d1dc8075"
     },
-    "browser": {
-    },
-    "browserify-shim": {
-    },
+    "browser": {},
+    "browserify-shim": {},
     "bundleDependencies": [],
     "private": false,
     "directories": {
