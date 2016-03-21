@@ -1,6 +1,6 @@
 {
     "name": "bbop-widget-set",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "license": "BSD-3-Clause",
     "description": "The set package for commpnly used BBOP widgets. This replaces the widgets from the old monolithic bundle.",
     "keywords": [
@@ -57,7 +57,7 @@
         ]
     },
     "browser": {
-	"jquery": "./node_modules/jquery/jquery.js",
+        "jquery": "./node_modules/jquery/jquery.js",
         "jquery-ui": "./lib/jquery-ui-1.10.3.custom.min.js"
     },
     "browserify-shim": {
