@@ -77,7 +77,7 @@
         "lib": "lib",
         "tests": "tests"
     },
-    "main": "./dist/bundle.js",
+    "main": "./lib/bundle.js",
     "bugs": {
         "url": "https://github.com/berkeleybop/bbop-widget-set/issues"
     },
