@@ -58,7 +58,8 @@
     },
     "browser": {
         "jquery": "./node_modules/jquery/jquery.js",
-        "jquery-ui": "./lib/jquery-ui-1.10.3.custom.min.js"
+        "jquery-ui": "./lib/jquery-ui-1.10.3.custom.min.js",
+        "./html": "./lib/html.js"
     },
     "browserify-shim": {
         "jquery": {
