@@ -83,6 +83,7 @@ gulp.task('compile', function(cb){
     return b
     // not in npm, don't need in browser
 	.exclude('ringo/httpclient')
+	//.standalone('bbop-widget-set') // 
 	.bundle()
     // desired output filename to vinyl-source-stream
 	.pipe(source('bundle.js'))
