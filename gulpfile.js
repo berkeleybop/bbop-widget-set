@@ -11,6 +11,8 @@ var git = require('gulp-git');
 var bump = require('gulp-bump');
 var del = require('del');
 var shell = require('gulp-shell');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 
 var paths = {
     readme: ['./README.md'],
@@ -63,6 +65,41 @@ gulp.task('jsdoc', ['clean'], function(cb) {
     cb(null);
 });
 
+///
+///
+///
+
+function _client_compile_task(file) {
+
+}
+
+// Compile all JS used in AmiGO and move it to the staging/deployment
+// directory.
+gulp.task('compile', function(cb){
+
+    var infile = './lib/set.js';
+
+    var b = browserify(infile);
+    return b
+    // not in npm, don't need in browser
+	.exclude('ringo/httpclient')
+	.bundle()
+    // desired output filename to vinyl-source-stream
+	.pipe(source('bundle.js'))
+	.pipe(gulp.dest('./dist/'));
+});
+
+// Rerun tasks when a file changes.
+gulp.task('watch', function(cb) {
+    gulp.watch('./lib/*.js', ['compile']);
+    cb(null);
+});
+
+///
+///
+///
+
+
 // Get rid of anything that is transient.
 gulp.task('clean', function(cb) {
     del(paths.transients);
@@ -107,7 +144,7 @@ gulp.task('git-tag', function(){
     var pkg = require('./package.json');
     var pver = pkg.version;
     git.tag('go-exp-widget-' + pver, 'version message', function (err){
-	if(err) throw err;
+	if(err){ throw err; }
     });
 });
 
